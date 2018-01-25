@@ -1,0 +1,41 @@
+#-------------------------------
+# General Site Settings
+
+title: Jason Chan
+email: chihimjc@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+ ~ Website Developer ~
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tweetjchan
+github_username:  gitjchan
+
+
+#-------------------------------
+# About Site Settings
+
+blurb: >
+  <strong>Hey! Welcome to my website (still a work in progress).</strong> I've taken a change in career and returned to my roots, Web Dev! It is my ambition to learn more, and be able to design and development beautiful UI!<br/><br/>
+
+  This website marks the beginning of my portfolio, as I restart my career. I look forward to my upcoming projects.<br/><br/>
+
+  I am a avid swing dancer - I can't get enough of it! (What is swing dancing? My next project will be on this very subject!) <br/>So far in Vancouver, I have been teaching seniors and high school students some dancing. Most recently, I've got freelance work in giving private lessons.<br/><br/>
+
+skills:
+  - {name: Programming, value: '6'}
+  - {name: Communication, value: '7'}
+  - {name: Creativity, value: '7'}
+  - {name: Teaching, value: '8'}
+  - {name: Organisation, value: '7'}
+  - {name: Learning, value: '8'}
+  - {name: Planning, value: '6'}
+  - {name: Teamwork, value: '8'}
+
+#-------------------------------
+# Social Site Settings
+
+social:
+  - {icon: github, link: 'https://github.com/gitjchan'}
+  - {icon: codepen, link: 'https://codepen.io/codepenjchan/'}
+  - {icon: facebook-official, link: 'https://www.facebook.com/facejchan'}
+  - {icon: linkedin-square, link: 'https://www.linkedin.com/feed/?trk=hb_signin'}

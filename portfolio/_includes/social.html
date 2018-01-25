@@ -1,0 +1,15 @@
+<section class="section">
+	<h3 id="social">Social Media</h3>
+
+	<div class="socialMediaBar">
+		{% for links in site.data.settings.social %}
+			<a href="{{links.link}}" class="icon-{{links.icon}}"></a>
+		{% endfor %}
+	</div>
+
+	<hr class="bar"/>
+
+	<a class="email" href="mailto:chihimjc@gmail.com">{{ site.data.settings.email }}</a>
+
+	
+</section>

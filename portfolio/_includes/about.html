@@ -1,0 +1,33 @@
+<section>
+	<h3 id="aboutme">About Me</h3>
+
+	<div class="aboutme-grouping">
+		<div class="myFace"></div>
+
+		<div class="myFace-2"></div>
+
+		<div class="myFace-3"></div>
+
+	</div>
+
+	<p class="description">{{ site.data.settings.blurb }}</p>
+
+
+	<div class="skills-grouping">
+		<div class="skill-container">
+
+		{% for skill in site.data.settings.skills %}
+			<div class="skill-unit">
+				<div class="skill-name">{{ skill.name }}</div>
+				<div class="skill-icon skill-{{skill.value}}">
+					<span></span><span></span><span></span><span></span><span></span><span></span>
+					<span></span><span></span><span></span><span></span>
+				</div>
+			</div>
+		{% endfor %}
+		
+		</div>
+	</div>
+
+
+</section>

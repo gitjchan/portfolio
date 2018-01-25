@@ -1,0 +1,36 @@
+.section
+	text-align: center
+
+.socialMediaBar
+	margin: 20px auto
+	max-width: 600px
+	+display(flex)
+	// border-bottom: solid 3px $gold
+	// padding-bottom: 30px
+
+	.icon-github, .icon-linkedin-square, 
+	.icon-facebook-official, .icon-codepen
+		font-size: 30pt
+		color: $white
+		background: $gold
+		padding: 1%
+		margin: inherit
+		border-radius: 10%
+		+transition
+		&:hover 
+			+transform(scale(1.2))
+		
+.bar
+	width: 250px
+	border-top: solid 3px $gold
+	margin: 20px auto
+
+.email
+	width: 80%
+	display: inline-block
+	font:
+		size: 100px
+		weight: 200
+	color: $gold
+	margin: 0 auto
+		

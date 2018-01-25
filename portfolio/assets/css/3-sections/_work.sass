@@ -1,0 +1,117 @@
+.alt-section
+	background: rgba(0, 0, 0, 0.6)
+
+.section-work
+	overflow-x: hidden
+
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition(all 800ms)
+
+
+.thumb-wrap, .work-wrap
+	width: 50%
+	float: left
+
+.thumb-container
+	margin: 0 auto
+	padding: 30px 0 90px
+	max-width: 960px
+	+display(flex)
+	+justify-content(space-around)
+	+clearfix
+
+
+	.thumb-unit
+		display: block
+		width: 50%
+		+position(relative)
+		float: left
+		padding: 20% 10% 20% 10%
+		margin: 0 10px
+
+		background: url(/assets/img/tempThumb.jpg)
+			size: cover
+			position: center center
+			repeat: no-repeat
+		+perspective(300)
+
+		@media screen and (max-width: 770px)
+			margin: 0 2px
+
+		.thumb-overlay
+			+position(absolute, 0 0 null 0)
+			height: 100%
+			background: fade-out($white, 0.2)
+			+transition
+			+display(flex)
+			+justify-content(space-around)
+			+align-items(center)
+			cursor: pointer
+			@extend %animationstart_bounceOut
+
+			strong
+				color: $gold
+				font:
+					weight: 300
+					size: 30pt
+				text-transform: uppercase
+				line-height: 1.2
+				+transition(opacity 1s $ease-out-quart)
+
+				@media (max-width: 450px)
+					font:
+						weight: 200
+						size: 14pt
+
+
+		&:hover .thumb-overlay
+			@extend %bounceOut
+
+.thumb-descriptions
+	max-width: 600px
+	margin: 0px auto
+	+position(relative)
+	display: none
+
+	.arrowNav
+		background: url(/assets/img/navArrow.png)
+			size: contain
+			repeat: no-repeat
+			position: center center
+		+size(50px)
+		+transform(rotateY(180deg))
+		opacity: 0.5
+		cursor: pointer
+		+position(absolute, -20px null null -60px)
+
+		&:hover
+			opacity: 1
+
+	h4
+		color: $gold
+		font:
+			weight: 300
+			size: 16pt
+		text-transform: uppercase
+		line-height: 1.2
+
+
+	.tempImg
+		+size(600px)
+		text-align: center
+		background: $white
+		max-width: 100%
+		margin-bottom: 10px
+	p
+		color: $white
+
+@media (max-width: 710px)
+	.thumb-descriptions
+		width: 90%
+		.arrowNav
+			left: 0px
+		h4
+			margin-left: 60px

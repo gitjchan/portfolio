@@ -1,0 +1,115 @@
+h3
+	color: $gold
+	text-align: center
+	margin: 0 auto
+	padding: 40px 0 20px 0
+
+.aboutme-grouping
+	max-width: 780px
+	margin: 0 auto
+	+display(flex)
+	+justify-content(space-between)
+	+align-items(center)
+
+	.myFace
+		background: url(/assets/img/headshot.jpg)
+			size: cover
+			repeat: no-repeat
+			position: center
+		+size(200px)
+		border-radius: 50%
+		border: solid 5px $gold
+		+order(2)
+
+	[class^="myFace-"]
+		border: 3px solid $gold
+		border-radius: 50%
+		background: 
+			size: contain
+			position: center center
+			repeat: no-repeat
+		+size(150px)
+		color: $white
+
+		&.myFace-2
+			background: url(/assets/img/toughMudder.jpg)
+				size: cover
+				position: center center
+				repeat: no-repeat
+			+order(3)
+
+		&.myFace-3
+			background: url(/assets/img/dancing.jpg)
+				size: cover
+				position: center center
+				repeat: no-repeat
+			+order(1)
+
+@media screen and (max-width: 550px) and (min-width: 310px)
+	.aboutme-grouping
+		display: block
+		text-align: center
+		width: 330px
+
+		div
+			display: inline-block
+
+		[class^="icon-"]
+			margin: 50px
+
+.description
+	padding: 10px 40px
+	max-width: 900px
+	margin: 20px auto
+	margin-top: 50px
+	font:
+		size: 16pt
+
+.skills-grouping
+	// display: block
+	// overflow: auto
+	max-width: 700px
+	margin: 100px auto
+	.skill-container
+		+clearfix
+		width: 615px
+		margin: 0 auto
+	.skill-unit
+		float: left
+		width: 300px
+		text-align: center
+
+	.skill-name
+		font:
+			weight: 500
+			size: 14pt
+
+	.skill-icon
+		font: 
+			size: 0
+		padding-top: 5px
+
+		span
+			border: solid $gold 1px
+			background: $gold
+			+size(14px)
+			border-radius: 50%	
+			display: inline-block
+			margin-right: 3px 
+
+			&:after
+				content: ''
+				display: block
+				background: $white
+				+size(10px)
+				border-radius: 50%
+				margin: 2px
+
+		@for $i from 1 through 10
+			&.skill-#{$i} span:nth-child(n+#{$i + 1})  
+				background: $white
+
+@media screen and (max-width: 630px)
+	.skills-grouping
+		.skill-container
+			width: 300px
