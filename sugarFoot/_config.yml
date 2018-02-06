@@ -1,0 +1,8 @@
+port: 8800
+sass:
+    sass_dir: assets/css
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

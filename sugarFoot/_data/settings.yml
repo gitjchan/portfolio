@@ -1,0 +1,21 @@
+
+title: Sugar Foot!
+email: 
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Dances section 
+#---------------------------
+
+lindyDesc: The Lindy hop is an American dance which was born in Harlem, New York City in 1928. <br/>
+           In its development, the Lindy hop combined elements of both partnered and solo dancing by using the movements, and improvisation of African-American dances along with the formal eight-count structure of European partner dances. <br/>
+           Lindy hop is sometimes referred to as a street dance, referring to its improvisational and social nature.
+shagDesc: 
+bluesDesc: 
+
+copyRight: Copyright 2018
+footerText: Sugar Foot!
